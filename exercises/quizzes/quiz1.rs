@@ -14,6 +14,19 @@
 
 fn main() {
     // You can optionally experiment here.
+    let number1: i128 = 30;
+    let number2: i128 = 40;
+    let number3: i128 = 41;
+    let number4: i128 = 65;
+
+    println!("{}", calculate_price_of_apples(number1));
+    println!("{}", calculate_price_of_apples(number2));
+    println!("{}", calculate_price_of_apples(number3));
+    println!("{}", calculate_price_of_apples(number4));
+}
+
+fn calculate_price_of_apples(number: i128) -> i128 {
+    if number <= 40 { number * 2 } else { number }
 }
 
 // Don't change the tests!
