@@ -8,11 +8,11 @@ fn is_even(num: i64) -> bool {
 }
 
 // TODO: Fix the function signature.
-fn sale_price(price: i64) -> {
+fn sale_price(price: i64) -> f32 {
     if is_even(price) {
-        price - 10
+        (price - 10) as f32
     } else {
-        price - 3
+        (price - 3) as f32
     }
 }
 
